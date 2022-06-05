@@ -3,15 +3,29 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+export const storeComp = {
   state: {
+    content: {
+      emojiFaceSrc:""
+    }
   },
-  getters: {
-  },
+  getters: {},
   mutations: {
+
   },
   actions: {
-  },
-  modules: {
+    storeAssets: () => {
+      
+    }
   }
-})
+}
+
+export default new Vuex.Store({
+  state: {},
+  getters: {},
+  mutations: {},
+  actions: {},
+  modules: {
+    storeComp,
+  },
+});

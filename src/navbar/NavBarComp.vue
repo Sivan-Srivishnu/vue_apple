@@ -15,7 +15,7 @@
            <router-link to="#"><v-icon class="vueIcons white--text">fas fa-search</v-icon></router-link>
            <router-link to=""><v-icon class="vueIcons white--text">fa-solid fa-bag-shopping</v-icon></router-link>
        </nav>
-       <!-- <router-view/> -->
+       <!--  -->
       
        
    
@@ -37,15 +37,14 @@ nav a{
     font-size: 12px;
     line-height: 3.66667;
     font-weight: 400;
-    letter-spacing: -.01em;
+    /* letter-spacing: -.01em; */
     position: relative;
-    z-index: 1;
+    z-index: 100;
     display: inline-block;
-    padding: 0 2px;
+    /* padding: 0 2px; */
     height: 44px;
     opacity: .8;
     background: no-repeat;
-    text-decoration: none;
     white-space: nowrap;
     -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -54,10 +53,13 @@ nav a{
 
 }
 .custom--nav{
-    background-color: rgba(6, 6, 6, 0.767);
+    background-color: rgba(6, 6, 6, 0.932);
     display: flex;
     justify-content: center;
     overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
     
 }
 

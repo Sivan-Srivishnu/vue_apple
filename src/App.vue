@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <NavBarCompVue />
+    <router-view/>
     
   </v-app>
 </template>

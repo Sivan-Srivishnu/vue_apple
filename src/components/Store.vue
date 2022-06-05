@@ -1,15 +1,16 @@
 <template>
-    <div>
-
-    </div>
+  <div>
+    <v-card>
+        
+    </v-card>
+    <v-card> </v-card>
+  </div>
 </template>
 
 <script>
-    export default {
-        name:"storeComp"
-    }
+export default {
+  name: "storeComp",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
