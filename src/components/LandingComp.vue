@@ -57,6 +57,54 @@
                 </section>
         </v-card>
     </v-card>
+    <v-card tile class="ios16" elevation="0">
+        
+            
+       
+        <v-img src="https://www.apple.com/in/home/images/overview/ios-16/ios16__dcfvpgo5ufgy_large.jpg" class="ios16--bgimg"> <v-card-title class="ios16--titleCard ml-auto">
+            iOS 16
+        </v-card-title></v-img>
+        <!-- <v-card-title class="random">Personalise your Lock Screen with photos, customised widgets, even the way you get notifications. Create a Shared Photo Library to share photos and videos with loved ones. Enhance everyday moments with powerful new features in Messages and Mail.</v-card-title>
+         -->
+    </v-card>
+
+    <v-card class="watchOS9--card" elevation="0">
+        <v-img src="https://www.apple.com/v/home/takeover/c/images/overview/watchos-9/watchos__fg9h3oc7tq62_large.jpg" lazy-src="https://www.apple.com/v/home/takeover/c/images/overview/watchos-9/watchos__fg9h3oc7tq62_large.jpg" class="watchOS9--img" alt="watch"><v-card-title class="watchOStitle">
+            watchOS 9
+        </v-card-title></v-img>
+    </v-card>
+    <v-card dark class="footer-dark">
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Company Name</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Company Name © 2018</p>
+            </div>
+        </footer>
+    
+    </v-card>
     </div>
 </template>
 
@@ -67,6 +115,98 @@
 </script>
 
 <style scoped>
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+.footer-dark{
+    padding:5px;
+}
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+ 
+.watchOS9--img .watchOStitle{
+   font-size: 4.5rem;
+    z-index: 2;
+    color:#1D1D1F;
+    top: 30px;
+    position: absolute;
+    left:38%;
+}
+.watchOS9--card{
+    margin-top: 150px;
+    height: 100vh;
+    background-color: #EEEEF0;
+    background-image: url("https://www.apple.com/v/home/takeover/c/images/overview/watchos-9/watchos__fg9h3oc7tq62_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.ios16--titleCard{
+    top:50px;
+    left:40%;
+}
+
+.random{
+    position: absolute;
+    z-index: 1000;
+    max-width: 500px;
+    text-align: center;
+    margin-left: 35%;
+}
 .emiNav{
     margin: 44px 0;
     display: flex;
@@ -179,9 +319,7 @@ section a:hover {
 
 }
 
-.iphoneSE{
-    /* height: 70vh; */
-}
+
 .the--new{
     font-weight:bold;
     font-size:1.5rem
@@ -246,7 +384,7 @@ section a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("https://www.apple.com/v/home/ao/images/promos/iphone-13/promo_iphone13_avail__frc36u35m0ii_large.jpg");
-    
+    background-color: #FBFBFD;
 }
 
 .iphone13--Title--title{
@@ -257,5 +395,29 @@ section a:hover {
    margin-left: 0 auto;
 /* position: absolute; */
     z-index: 5;
+}
+
+.ios16 {
+    height: 100vh;
+    /* overflow: hidden; */
+
+}
+
+
+
+.ios16 .ios16--titleCard{
+    position:absolute;
+    font-size: 5.5rem;
+    z-index: 2;
+    color:#1D1D1F;
+    
+}
+
+.ios16 .ios16--bgimg{
+    aspect-ratio: 5/3;
+    margin-top: 50px;
+    position: relative;
+    
+    
 }
 </style>

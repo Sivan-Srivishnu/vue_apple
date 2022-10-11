@@ -62,6 +62,22 @@ const routes = [
     name: "Support",
     component: () => import("@/components/Support.vue"),
   },
+  {
+    path: "/login",
+    name: "LoginComp",
+    component:()=>import("@/auth/LoginComp.vue")
+  },
+  {
+    path: "/account",
+    name: "AccountComp",
+    component:()=>import("@/auth/AccountComp.vue")
+    
+  },
+  {
+    path: "/*",
+    name: "pageNotFound",
+    component:()=>import("@/auth/PageNotFound.vue")
+  }
 ];
 
 const router = new VueRouter({

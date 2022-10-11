@@ -6,6 +6,14 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+Vue.directive("menuColor", {
+  bind(el) {
+    el.style.color = "#2079D2";
+  }
+})
+
+
+
 new Vue({
   router,
   vuetify,
